@@ -6,5 +6,5 @@ use Illuminate\Http\Request;
 
 class PegawaiController extends Controller
 {
-    //
+    //ALIN CANTIK KALIIII
 }
