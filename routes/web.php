@@ -36,3 +36,6 @@ Route::get('/matakuliah', [MatakuliahController::class, 'index']); {
 };
 
 Route::get('/matakuliah/show/{kode?}', [MatakuliahController::class, 'show']);
+
+//alin cantik bgt
+
