@@ -6,6 +6,7 @@ use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\MatakuliahController;
 use App\Http\Controllers\HomeController;
 
+//alinniieee
 Route::get('/', function () {
     return view('welcome');
 });
