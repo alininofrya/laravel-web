@@ -33,12 +33,15 @@ public function store(Request $request)
     $data['email'] = $request->email;
     $data['pertanyaan'] = $request->pertanyaan;
 
-    return view('home-question-respon', $data);
-    
+    //return view('home-question-respon', $data);
+
 		$request->validate([
 		    'nama'  => 'required|max:10',
 		    'email' => ['required','email'],
 		    'pertanyaan' => 'required|max:300|min:8',
+        ],[
+            'nama.required'=>'Nama tidak boleh kosong',
+            'email.email' => 'Email Tidak valid'
 		]);
 
 		return;
