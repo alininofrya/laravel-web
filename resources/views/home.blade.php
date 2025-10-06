@@ -82,12 +82,19 @@
                 <div class="card h-100 shadow-sm">
                     <div class="card">
                         <div class="card-body">
-                            ...
                             <h5 class="card-title">Form Pertanyaan</h5>
+                            @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error )
+                                    <li>{{$error}}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
                             <form action="{{ route('question.store') }}" method="POST">
                                 @csrf
-
-                                ...
+                                
                                 <div class="mb-3">
                                     <label for="nama" class="form-label">Nama</label>
                                     <input type="text" name="nama" class="form-control">
