@@ -6,6 +6,7 @@ use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\MatakuliahController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\AuthController;
 
 //alinniieee
 Route::get('/', function () {
@@ -44,3 +45,10 @@ Route::get('/home', [HomeController::class, 'index']); {
 }
 
 Route::post('question/store', [QuestionController::class, 'store'])->name('question.store');
+
+Route::get('/auth', [AuthController::class, 'index']);
+Route::post('/auth/login', [AuthController::class, 'login']);
+
+Route::get('/home', function () {
+    return view('home'); // view: resources/views/home.blade.php
+});
