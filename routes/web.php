@@ -7,6 +7,7 @@ use App\Http\Controllers\MatakuliahController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuestionController ;
 
+//alinniieee
 Route::get('/', function () {
     return view('welcome');
 });
