@@ -13,7 +13,7 @@ class PegawaiController extends Controller
         $sekarang = date_create(date('Y-m-d'));
         $umur = date_diff($tanggal_lahir, $sekarang)->y;
 
-        $hobbies = ["Main Volly", "Main Duo lingo", "Streaming NVL", "Main Game", "Nonton Film"];
+        $hobbies = ["Main Volly", "Main Duo lingo", "Streaming VNL", "Main Game", "Travelling"];
 
         $tgl_harus_wisuda = "2028-10-28";
 
@@ -29,7 +29,7 @@ class PegawaiController extends Controller
             $motivasi = "Jangan main-main, kurangi main game!";
         }
 
-        $future_goal = "Menjadi Software Engineer profesional";
+        $future_goal = "Menjadi Web Developer";
 
         return view('halaman-pegawai', [
             'name' => $name,
