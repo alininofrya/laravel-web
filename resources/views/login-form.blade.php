@@ -13,7 +13,6 @@
         <div class="card-body">
             <h4 class="text-center mb-3">Form Login</h4>
 
-            {{-- Tampilkan error --}}
             @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul class="mb-0">
@@ -24,7 +23,6 @@
                 </div>
             @endif
 
-            {{-- Tampilkan pesan sukses --}}
             @if (session('success'))
                 <div class="alert alert-success">
                     {{ session('success') }}

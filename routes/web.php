@@ -7,6 +7,7 @@ use App\Http\Controllers\MatakuliahController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PegawaiController;
 
 //alinniieee
 Route::get('/', function () {
@@ -22,33 +23,35 @@ Route::get('/mahasiswa', function () {
 });
 
 Route::get('/nama/{param1}', function ($param1) {
-    return 'Nama saya: '.$param1;
+    return 'Nama saya: ' . $param1;
 });
 
 Route::get('/nim/{param1?}', function ($param1 = '') {
-    return 'NIM saya: '.$param1;
+    return 'NIM saya: ' . $param1;
 });
 
 Route::get('/mahasiswa/{param1}', [MahasiswaController::class, 'show']); {
-};
+}
+;
 
 Route::get('/about', function () {
     return view('halaman-about');
 });
 
 Route::get('/matakuliah', [MatakuliahController::class, 'index']); {
-};
+}
+;
 
 Route::get('/matakuliah/show/{kode?}', [MatakuliahController::class, 'show']);
 
 Route::get('/home', [HomeController::class, 'index']); {
 }
 
-Route::post('question/store', [QuestionController::class, 'store'])->name('question.store');
+Route::post('question/store', [QuestionController::class, 'store'])
+    ->name('question.store');
 
 Route::get('/auth', [AuthController::class, 'index']);
+
 Route::post('/auth/login', [AuthController::class, 'login']);
 
-Route::get('/home', function () {
-    return view('home'); // view: resources/views/home.blade.php
-});
+Route::get('/pegawai', [PegawaiController::class, 'index']);
