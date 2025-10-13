@@ -33,6 +33,11 @@ public function store(Request $request)
     $data['email'] = $request->email;
     $data['pertanyaan'] = $request->pertanyaan;
 
+    //return redirect()->route('home');
+    //return redirect()->back();
+    //return redirect()->away('https://pcr.ac.id');
+    return redirect()->route('home')->with('info', 'Berhasil Dikirim!');
+
     //return view('home-question-respon', $data);
 
 		$request->validate([

@@ -44,11 +44,11 @@ Route::get('/matakuliah', [MatakuliahController::class, 'index']); {
 
 Route::get('/matakuliah/show/{kode?}', [MatakuliahController::class, 'show']);
 
-Route::get('/home', [HomeController::class, 'index']); {
+Route::get('/home', [HomeController::class, 'index'])->name('home'); {
 }
 
 Route::post('question/store', [QuestionController::class, 'store'])
-    ->name('question.store');
+->name('question.store');
 
 Route::get('/auth', [AuthController::class, 'index']);
 
