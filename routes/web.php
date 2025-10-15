@@ -10,7 +10,6 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\DashboardController;
 
-//alinniieee
 Route::get('/', function () {
     return view('welcome');
 });
