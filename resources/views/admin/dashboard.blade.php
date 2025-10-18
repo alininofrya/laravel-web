@@ -209,7 +209,7 @@
 											<div class="col-auto">
 												<!-- Avatar -->
 												<img alt="Image placeholder"
-													src="../../assets/img/team/profile-picture-1.jpg"
+													src="{{ asset('assets-admin/img/team/profile-picture-1.jpg') }}"
 													class="avatar-md rounded">
 											</div>
 											<div class="col ps-0 ms-2">
@@ -232,7 +232,7 @@
 											<div class="col-auto">
 												<!-- Avatar -->
 												<img alt="Image placeholder"
-													src="../../assets/img/team/profile-picture-2.jpg"
+													src="{{ asset('assets-admin/img/team/profile-picture-2.jpg') }}"
 													class="avatar-md rounded">
 											</div>
 											<div class="col ps-0 ms-2">
@@ -267,7 +267,7 @@
 								data-bs-toggle="dropdown" aria-expanded="false">
 								<div class="media d-flex align-items-center">
 									<img class="avatar rounded-circle" alt="Image placeholder"
-										src="../../assets/img/team/profile-picture-3.jpg">
+										src="{{ asset('assets-admin/img/team/profile-picture-3.jpg') }}">
 									<div class="media-body ms-2 text-dark align-items-center d-none d-lg-block">
 										<span class="mb-0 font-small fw-bold text-gray-900">Bonnie Green</span>
 									</div>
@@ -545,7 +545,7 @@
 												<!-- Avatar -->
 												<a href="#" class="avatar">
 													<img class="rounded" alt="Image placeholder"
-														src="../../assets/img/team/profile-picture-1.jpg">
+														src="{{ asset('assets-admin/img/team/profile-picture-1.jpg') }}">
 												</a>
 											</div>
 											<div class="col-auto ms--2">
@@ -577,8 +577,9 @@
 												<!-- Avatar -->
 												<a href="#" class="avatar">
 													<img class="rounded" alt="Image placeholder"
-														src="../../assets/img/team/profile-picture-2.jpg">
+														src="{{ asset('assets-admin/img/team/profile-picture-2.jpg') }}">
 												</a>
+
 											</div>
 											<div class="col-auto ms--2">
 												<h4 class="h6 mb-0">
@@ -609,7 +610,7 @@
 												<!-- Avatar -->
 												<a href="#" class="avatar">
 													<img class="rounded" alt="Image placeholder"
-														src="../../assets/img/team/profile-picture-3.jpg">
+														src="{{ asset('assets-admin/img/team/profile-picture-3.jpg') }}">
 												</a>
 											</div>
 											<div class="col-auto ms--2">
@@ -641,7 +642,7 @@
 												<!-- Avatar -->
 												<a href="#" class="avatar">
 													<img class="rounded" alt="Image placeholder"
-														src="../../assets/img/team/profile-picture-4.jpg">
+														src="{{ asset('assets-admin/img/team/profile-picture-4.jpg') }}">
 												</a>
 											</div>
 											<div class="col-auto ms--2">
@@ -789,9 +790,9 @@
 						<div class="profile-cover rounded-top" data-background="../../assets/img/profile-cover.jpg"
 							style="background: url(&quot;../../assets/img/profile-cover.jpg&quot;);"></div>
 						<div class="card-body pb-5">
-							<img src="../../assets/img/team/profile-picture-1.jpg"
+							<img src="{{ asset('assets-admin/img/team/alin.jpg') }}" alt="Image placeholder"
 								class="avatar-xl rounded-circle mx-auto mt-n7 mb-4" alt="Neil Portrait">
-							<h4 class="h3">Neil Sims</h4>
+							<h4 class="h3">Alini Nofry Ananta</h4>
 							<h5 class="fw-normal">Senior Software Engineer</h5>
 							<p class="text-gray mb-4">New York, USA</p>
 							<a class="btn btn-sm btn-gray-800 d-inline-flex align-items-center me-2" href="#">
