@@ -9,6 +9,7 @@ use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PelangganController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -57,3 +58,5 @@ Route::post('/auth/login', [AuthController::class, 'login']);
 Route::get('/pegawai', [PegawaiController::class, 'index']);
 
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+Route::resource('pelanggan', PelangganController::class);
