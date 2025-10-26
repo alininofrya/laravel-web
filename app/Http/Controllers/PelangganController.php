@@ -88,5 +88,6 @@ class PelangganController extends Controller
         $pelanggan->delete();
 
         return redirect()->route('pelanggan.index')->with('success', 'Data berhasil dihapus');
+
     }
 }
