@@ -1,5 +1,5 @@
-@extends('admin.template')
-@Section('title', 'Edit Pelanggan')
+@extends('admin.layouts.app')
+@Section('title', 'Edit Pelanggan') 
 @section('content')
 
     <div class="py-4">
