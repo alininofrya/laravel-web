@@ -73,7 +73,7 @@
                                                         class="btn btn-outline-secondary ml-3" id="clear-search"> Clear</a>
                                                 @endif
                                             </div>
-                                        </div>
+                                        </div> 
                                     </div>
                                 </form>
                                 <table id="table-pelanggan" class="table table-centered table-nowrap mb-0 rounded">
